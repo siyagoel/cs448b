@@ -129,7 +129,7 @@
 
   // ---------- 1. Line + fire lanes + HMS strip ----------
   function chart1() {
-    const m = { top: 14, right: 20, bottom: 28, left: 46 };
+    const m = { top: 14, right: 20, bottom: 44, left: 52 };
     const pmH = 200, hmsH = 12, laneH = 17, gap = 8;
     const lanes = fires;
     const bodyH = pmH + gap + hmsH + gap + lanes.length * laneH;
@@ -179,7 +179,7 @@
     annotate("2020-09-11", ["Sept. 11: the real peak", "Bay median 130 µg/m³"], "right", 128, "#c45c26");
 
     g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5));
-    g.append("text").attr("transform", "rotate(-90)").attr("x", -pmH / 2).attr("y", -34)
+    g.append("text").attr("transform", "rotate(-90)").attr("x", -pmH / 2).attr("y", -40)
       .attr("text-anchor", "middle").attr("font-size", 11).attr("font-family", FONT).attr("fill", "#555").text("Bay median PM2.5 (µg/m³)");
 
     // HMS strip
@@ -211,6 +211,12 @@
     });
 
     g.append("g").attr("class", "axis").attr("transform", `translate(0,${bodyH})`).call(d3.axisBottom(x).ticks(8));
+    g.append("text").attr("x", iw / 2).attr("y", bodyH + 36).attr("text-anchor", "middle").attr("font-size", 11).attr("font-family", FONT).attr("fill", "#555").text("Date (2020)");
+    // row labels for the smoke strip and the fire bars
+    g.append("text").attr("x", -6).attr("y", pmH + gap + hmsH - 2).attr("text-anchor", "end")
+      .attr("font-size", 10).attr("font-family", FONT).attr("fill", "#555").text("Smoke");
+    g.append("text").attr("x", -6).attr("y", pmH + gap + hmsH + gap + 11).attr("text-anchor", "end")
+      .attr("font-size", 10).attr("font-family", FONT).attr("fill", "#555").text("Fires");
 
     const hover = g.append("line").attr("y1", 0).attr("y2", pmH).attr("stroke", "#555").attr("stroke-dasharray", "2,3").style("display", "none");
     const sel = g.append("line").attr("y1", 0).attr("y2", bodyH).attr("stroke", "#111").attr("stroke-width", 1.5).style("display", "none");
@@ -527,13 +533,18 @@
   let racePaint = null;
   function chart6() {
     const rowH = 26;
-    const m = { top: 8, right: 170, bottom: 14, left: 100 };
+    const m = { top: 8, right: 170, bottom: 50, left: 100 };
     const H = m.top + counties.length * rowH + m.bottom;
     const { g, iw } = mk("#v-race", H, m);
     const maxFinal = d3.max(counties, (c) => cum.get(c)[nDays - 1].e);
     const x = d3.scaleLinear().domain([0, maxFinal]).range([0, iw]);
     const y = d3.scaleBand().domain(counties).range([0, counties.length * rowH]).padding(0.18);
     let rank = new Map(counties.map((c, i) => [c, i + 1]));
+    const axY = counties.length * rowH;
+    g.append("g").attr("class", "axis").attr("transform", `translate(0,${axY})`)
+      .call(d3.axisBottom(x).ticks(5).tickFormat(d3.format(",")));
+    g.append("text").attr("x", iw / 2).attr("y", axY + 38).attr("text-anchor", "middle").attr("font-size", 11).attr("font-family", FONT).attr("fill", "#555")
+      .text("Total pollution above background so far (µg/m³ added up over days)");
 
     // full-width transparent rows make the whole line clickable, not just the bar
     const hits = g.selectAll("rect.hit").data(counties, (c) => c).join("rect").attr("class", "hit")

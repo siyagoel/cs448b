@@ -159,7 +159,7 @@
     lgd.append("span").html(`Bay median PM2.5: 0 <i style="width:120px;background:linear-gradient(90deg,${grad})"></i> 130+ µg/m³`);
     lgd.append("span").html(`<i style="background:${NA}"></i>no data`);
 
-    const m = { top: 14, right: 118, bottom: 28, left: 52 };
+    const m = { top: 14, right: 118, bottom: 44, left: 52 };
     const rowH = 34;
     const { g, iw } = mk("#v-years", m.top + years.length * rowH + m.bottom, m);
     const [lo, hi] = WINDOWS[L.winKey];
@@ -221,16 +221,24 @@
     else if (span > 45) ax.ticks(d3.timeMonth.every(1)).tickFormat(d3.timeFormat("%b %d"));
     else ax.ticks(d3.timeDay.every(span > 20 ? 7 : 2)).tickFormat(d3.timeFormat("%b %d"));
     g.append("g").attr("class", "axis").attr("transform", `translate(0,${ih})`).call(ax);
+    g.append("text").attr("x", iw / 2).attr("y", ih + 36).attr("text-anchor", "middle").attr("font-size", 11).attr("font-family", FONT).attr("fill", "#555")
+      .text(L.winKey === "all" ? "Date (same calendar for every year)" : "Date in the fire season (same calendar for every year)");
+    g.append("text").attr("x", -8).attr("y", -4).attr("text-anchor", "end").attr("font-size", 10).attr("font-family", FONT).attr("fill", "#666").text("Year");
   }
 
   function cumChart(st) {
     // Dark red = high-PM days, as on the timeline's dots
     const BAR = "#7f1d1d", BAR_TRACK = "#f2e8e4", BAR_INK = "#7f1d1d";
-    const m = { top: 8, right: 48, bottom: 8, left: 52 };
+    const m = { top: 8, right: 48, bottom: 46, left: 52 };
     const rowH = 26;
     const { g, iw } = mk("#v-cum", m.top + years.length * rowH + m.bottom, m);
     const maxAny = Math.max(1, d3.max(st, (s) => s.nAny));
     const x = d3.scaleLinear().domain([0, Math.max(maxAny, 22)]).range([0, iw]);
+    const cumAxY = years.length * rowH;
+    g.append("g").attr("class", "axis").attr("transform", `translate(0,${cumAxY})`)
+      .call(d3.axisBottom(x).ticks(Math.min(6, x.domain()[1])).tickFormat(d3.format("d")));
+    g.append("text").attr("x", iw / 2).attr("y", cumAxY + 36).attr("text-anchor", "middle").attr("font-size", 11).attr("font-family", FONT).attr("fill", "#555")
+      .text("Number of days with unhealthy air in at least one county");
     years.forEach((y, i) => {
       const s = st.find((q) => q.year === y);
       const row = g.append("g").attr("transform", `translate(0,${i * rowH})`);
@@ -302,7 +310,7 @@
     const titleFocus = focused.length === 0 ? "" : focused.length <= 2 ? ": " + focused.join(", ") : `: ${focused.length} counties`;
 
     // --- headline bars ---
-    const m = { top: 28, right: 24, bottom: 56, left: 48 };
+    const m = { top: 28, right: 24, bottom: 56, left: 64 };
     const barH = 200;
     const { g, iw } = mk("#v-local", m.top + barH + m.bottom, m);
     const groups = [
@@ -313,6 +321,8 @@
     const yMax = Math.max(0.35, (on.share || 0) * 1.25, (off.share || 0) * 1.25);
     const y = d3.scaleLinear().domain([0, yMax]).range([barH, 0]);
     g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(4).tickFormat(pct));
+    g.append("text").attr("transform", "rotate(-90)").attr("x", -barH / 2).attr("y", -48).attr("text-anchor", "middle").attr("font-size", 11).attr("font-family", FONT).attr("fill", "#555")
+      .text("Share with unhealthy air");
     g.append("text").attr("x", 0).attr("y", -12).attr("font-size", 12).attr("font-family", FONT).attr("font-weight", 600).attr("fill", "#333")
       .text(`Share of smoky days with unhealthy air (35 µg/m³ or more)${titleFocus}`);
     groups.forEach((d) => {

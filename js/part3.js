@@ -332,7 +332,7 @@
       keys.forEach((k) => { o[k] = v.filter((d) => catOf(d) === k).length; });
       return o;
     });
-    const m = { top: 8, right: 56, bottom: 28, left: 100 };
+    const m = { top: 8, right: 56, bottom: 46, left: 100 };
     const rowH = 26;
     const { g, iw } = mk("#v-county-bars", m.top + stats.length * rowH + m.bottom, m);
     const x = d3.scaleLinear().domain([0, 1]).range([0, iw]);
@@ -366,6 +366,8 @@
     });
     g.append("g").attr("class", "axis").attr("transform", `translate(0,${stats.length * rowH})`)
       .call(d3.axisBottom(x).ticks(5).tickFormat(d3.format(".0%")));
+    g.append("text").attr("x", iw / 2).attr("y", stats.length * rowH + 36).attr("text-anchor", "middle").attr("font-size", 11).attr("font-family", FONT).attr("fill", "#555")
+      .text("Share of the county’s days since Aug. 1");
 
     const agreeN = d3.sum(stats, (s) => s.agree);
     const nDays = new Set(data.filter((d) => catOf(d) === "agree").map((d) => +d.date)).size;
