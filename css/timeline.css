@@ -1,0 +1,63 @@
+/* Extra styles for timeline.html (loaded after styles.css) */
+.sel-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 252, 247, 0.96);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid var(--line);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.84rem;
+}
+
+.sel-bar .inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  align-items: center;
+}
+
+.sel-bar b { font-weight: 600; }
+.sel-bar .muted { color: var(--muted); }
+.sel-bar button {
+  font: inherit;
+  border: 1px solid var(--ink);
+  background: #fff;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.concept-meta {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  margin: 0 0 10px;
+}
+
+.concept-meta strong { color: var(--ink); font-weight: 600; }
+
+.tm-controls input[type="range"] { width: min(420px, 60vw); }
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.82rem;
+  background: var(--card);
+}
+
+table.compare th,
+table.compare td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.compare th { background: #efe8dc; }

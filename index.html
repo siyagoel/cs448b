@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>When Smoke Moves In — How the Bay Area’s 2020 fire season looked from space vs. at street level</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/timeline.css" />
+  <style>
+    body {
+      background: #f7f5f1;
+      font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+    }
+    .article-hero {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 24px 28px;
+    }
+    .kicker {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8a3b12;
+      margin: 0 0 14px;
+    }
+    .article-hero h1 {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: clamp(2.05rem, 4.8vw, 3.1rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 18px;
+      line-height: 1.18;
+      color: #111;
+    }
+    .article-hero .dek {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 1.2rem;
+      color: #444;
+      margin: 0 0 22px;
+      line-height: 1.45;
+    }
+    .article-hero .byline {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 0.84rem;
+      color: #666;
+      margin: 0;
+      padding-top: 16px;
+      border-top: 1px solid #ddd6cb;
+    }
+    .article-section {
+      max-width: 1180px;
+      margin: 0 auto 8px;
+      padding: 8px 24px 12px;
+      border-top: none;
+    }
+    .article-section .prose {
+      max-width: 680px;
+      margin: 0 auto 22px;
+    }
+    .article-section .prose h2 {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: clamp(1.5rem, 2.6vw, 1.95rem);
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin: 48px 0 16px;
+      line-height: 1.25;
+      color: #111;
+    }
+    .article-section .prose p {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 1.08rem;
+      line-height: 1.72;
+      color: #222;
+      margin: 0 0 1.05em;
+    }
+    .article-section .prose p.note {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.55;
+      border-left: 3px solid #c4b8a5;
+      padding-left: 14px;
+      margin: 1.4em 0 1.6em;
+    }
+    .article-section .chart-wrap {
+      max-width: 1080px;
+      margin: 8px auto 36px;
+    }
+    .article-section .chart-block {
+      background: #fffcf8;
+      border: 1px solid #e5dfd4;
+      box-shadow: none;
+      padding: 20px 20px 24px;
+    }
+    .article-section .chart-block h3 {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 0 0 6px;
+      color: #222;
+    }
+    .article-section .chart-block .hint {
+      font-size: 0.84rem;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+    .seg { margin-bottom: 8px; font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 0.85rem; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
+    .seg .grp { display: inline-flex; flex-wrap: wrap; align-items: center; row-gap: 4px; }
+    .seg .grp > span { margin-right: 6px; color: var(--muted); }
+    .seg button { white-space: nowrap; border: 1px solid var(--ink); background: #fff; color: var(--ink); padding: 4px 10px; cursor: pointer; font: inherit; margin-left: -1px; }
+    .seg button.on { background: var(--ink); color: #fff; }
+    .takeaway { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 0.95rem; margin: 6px 0 12px; }
+    .caveat { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 0.8rem; color: var(--muted); margin: 10px 0 0; }
+    .tm-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 8px 0 12px; font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .tm-controls button { border: 1px solid var(--ink); background: #fff; color: var(--ink); padding: 6px 14px; cursor: pointer; font: inherit; }
+    .tm-controls button.playing { background: var(--ink); color: #fff; }
+    .tm-controls input[type="range"] { width: min(420px, 60vw); }
+    #yr-label, #p3-bars-date { min-width: 92px; font-weight: 600; }
+    .sel-bar .ctl { display: inline-flex; align-items: center; gap: 8px; }
+    .sel-bar input[type="range"] { width: 160px; }
+    #p3-level button { margin-left: -1px; }
+    #p3-level button.on { background: var(--ink); color: #fff; }
+    .p3-grid { display: grid; grid-template-columns: minmax(260px, 340px) minmax(0, 1fr); gap: 8px 22px; align-items: start; }
+    .p3-grid #v-county-map { min-width: 0; }
+    @media (max-width: 820px) { .p3-grid { grid-template-columns: minmax(0, 1fr); } .p3-grid #v-county-map { max-width: 420px; } }
+    .hint-list { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 0.86rem; line-height: 1.5; color: #555; margin: 4px 0 14px; padding-left: 18px; }
+    .hint-list li { margin: 0 0 3px; }
+    .hint-list b { color: #222; font-weight: 600; }
+    .summary { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 0.95rem; margin: 0 0 14px; }
+    .p3-controls {
+      max-width: 1080px;
+      margin: 0 auto 10px;
+      position: relative;
+      border: 1px solid #e5dfd4;
+      background: rgba(255, 252, 247, 0.96);
+    }
+    .article-end {
+      max-width: 680px;
+      margin: 24px auto 72px;
+      padding: 28px 24px 40px;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #ddd6cb;
+      line-height: 1.55;
+    }
+    .article-end h2 {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: #222;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+    .article-end a { color: #222; }
+    .article-end p { margin: 0 0 12px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body>
+  <header class="article-hero">
+    <p class="kicker">Wildfire · Air quality · Bay Area</p>
+    <h1>When Smoke Moves In, the Sky and the Air Don’t Always Agree</h1>
+    <p class="dek">
+      In the 2020 fire season, only about <strong>one in seven</strong> Bay Area county-days with satellite smoke overhead
+      also had unhealthy air at the ground. However, every day with unhealthy air had smoke overhead. On smoky days,
+      bad air was also much more common when a fire was burning in the same county: about <strong>24%</strong> of days,
+      compared with <strong>7%</strong> without one.
+    </p>
+    <p class="byline">
+      By Siya, Rubina &amp; Zaid · EPA PM2.5 · NOAA HMS satellite smoke · CalFire incidents · ten Bay Area counties
+    </p>
+  </header>
+
+  <section class="article-section">
+    <div class="prose">
+      <p>
+        If you lived in the Bay Area in 2020, you probably remember Sept. 9. People from Oakland to San Jose woke up to an orange sky. Photos of it went around the world, and parents sealed their windows. Everyone was asking the same question: <em>Is this what we’re breathing?</em>
+      </p>
+      <p>
+        For the most part, the answer that day was no. Satellites saw <strong>heavy</strong> smoke over all ten Bay Area counties. Yet not one county’s monitors reached 35 µg/m³, which is EPA’s line for air that is “unhealthy for sensitive groups.” The Bay-wide median was only about <strong>28</strong>. This is because the smoke was sitting on top of the cool marine layer, which kept it off the ground. The air district’s spokesman said at the time that low-lying areas were basically insulated from it (<a href="https://www.mv-voice.com/square/print/2020/09/09/wildfire-smoke-darkens-sky-while-layer-of-fog-protects-bay-area-air-quality">Mountain View Voice</a>). The air only turned bad once the smoke mixed down. The median hit 87 on Sept. 10 and 130 on Sept. 11.
+      </p>
+      <p>
+        This gap between what the sky shows and what reaches our lungs is what this article is about. We put three data sources on one calendar: EPA air monitors, NOAA satellite smoke and CalFire fire records. With them, we looked at how often the sky and the ground agreed in 2020, where and when they agreed, and what changed when a fire was burning in the same county. Our main takeaway is simple: <strong>smoke overhead is a warning sign, not a verdict.</strong>
+      </p>
+      <p>
+        We start by looking at the season as a whole. Then we follow each county’s running total of pollution. After that, we look at when the sky and the ground actually agreed. Finally, we compare 2020 with other years and check what a local fire added.
+      </p>
+    </div>
+  </section>
+
+  <!-- Scope wrapper: the sticky day bar only stays pinned through sections 1–2 -->
+  <div class="linked-scope">
+  <div class="sel-bar">
+    <div class="inner">
+      <span><span class="muted">Selected day</span> <b id="sb-date">—</b></span>
+      <span><span class="muted">Bay median PM2.5</span> <b id="sb-pm">—</b></span>
+      <span><span class="muted">Satellite smoke</span> <b id="sb-hms">—</b></span>
+      <span><span class="muted">Active fires</span> <b id="sb-fires">—</b></span>
+      <span><span class="muted">Focused fire</span> <b id="sb-fire">none</b></span>
+      <span><span class="muted">Zoom</span> <b id="sb-range">full year</b></span>
+      <button type="button" id="sb-reset">Reset</button>
+    </div>
+  </div>
+
+  <!-- 1. Timeline -->
+  <section class="article-section" id="s1">
+    <div class="prose">
+      <h2>The Season Was Longer Than the Photos</h2>
+      <p>
+        When we put pollution, satellite smoke and named CalFire fires on one timeline, 2020 stops looking like one viral afternoon. The worst days at ground level came in two clusters, one in late August and one in mid-September. Smoke overhead lasted much longer than that. The dashed line marks <strong>35 µg/m³</strong>, EPA’s “unhealthy for sensitive groups” level. You can drag across the chart to zoom in, or click a fire to focus on it.
+      </p>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-block">
+        <h3>Bay Area 2020: PM2.5, satellite smoke, and named fires</h3>
+        <ul class="hint-list">
+          <li><b>Orange line:</b> the Bay-wide median PM2.5 each day. <b>Dark red shading</b> shows when it went above 35 µg/m³, the unhealthy level.</li>
+          <li><b>Gray strip:</b> how thick the satellite smoke was over the Bay that day. Darker gray means thicker smoke.</li>
+          <li><b>Teal bars:</b> CalFire fires and how long they burned, labeled with acres burned. Darker bars burned inside Bay Area counties. Lighter bars burned outside the Bay Area and only sent smoke here.</li>
+          <li><b>Try it:</b> click a day to see its details in the bar above, drag across the chart to zoom, or click a fire to focus on it.</li>
+        </ul>
+        <div class="legend" id="legend-hms"></div>
+        <div id="v-lanes"></div>
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        Find Sept. 9 on the chart. The smoke strip is at its darkest, but the pollution line barely moves. Two days later, under the same dark strip, the line hits its peak of about <strong>130 µg/m³</strong>. The photos showed the smoke up high. The monitors showed it once it reached the air we breathe. Over the Aug. 1 to Nov. 15 season, satellites saw smoke over at least one county on about 80 days. However, the Bay-wide median crossed 35 on only 10 of them. Our memories boil a season down to a few images, but the calendar shows how long it actually lasted.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. Time machine -->
+  <section class="article-section" id="s2">
+    <div class="prose">
+      <h2>Ten Counties, Ten Different Smoke Seasons</h2>
+      <p>
+        Big spikes make the news, but exposure also adds up over time. EPA says the health effects of smoke depend on how much of it you breathe and for how long (<a href="https://www.epa.gov/wildfires/wildfire-smoke-and-health">EPA</a>). A 2025 study led by Harvard researchers also linked three months of wildfire smoke exposure to a higher risk of hospital visits for most heart and lung diseases (<a href="https://hsph.harvard.edu/news/cardiorespiratory-effects-of-wildfire-smoke-particles-can-persist-for-months-even-after-a-fire-has-ended">Harvard Chan School</a>).
+      </p>
+      <p>
+        In the race below, each bar shows a county’s total pollution above a low background level of 12 µg/m³. The labels count days at or above 35. Press Play and watch <em>when</em> the counties pull apart. It happens in late August and mid-September, the same weeks that stood out on the timeline. You can also click your county (or two, to compare) to follow it. Your pick carries over to the map in the next section.
+      </p>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-block">
+        <h3>Which counties breathed the most smoke pollution in 2020?</h3>
+        <ul class="hint-list">
+          <li><b>Bar length:</b> each county’s pollution above a normal background level (12 µg/m³), added up day by day. Longer means more total smoke breathed.</li>
+          <li><b>Labels:</b> that running total, then the number of unhealthy days (35 µg/m³ or more) so far.</li>
+          <li><b>Try it:</b> press Play, drag the slider, or click a county to follow it. Click it again to stop following. The date stays linked to the timeline above.</li>
+        </ul>
+        <div class="tm-controls">
+          <button type="button" id="tm-play">Play year</button>
+          <input type="range" id="tm-slider" min="0" max="365" value="254" />
+          <span id="tm-label" style="min-width:110px"></span>
+          <button type="button" id="race-clear" style="display:none">Clear counties</button>
+        </div>
+        <div id="v-race"></div>
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        Santa Cruz is the clearest example of a county having its own season. The CZU Lightning Complex started inside the county on Aug. 16. By Aug. 21, its monitors averaged about <strong>220 µg/m³</strong>, which is far above the Bay-wide peak of 130 in September. Santa Cruz took the lead on Aug. 20 and kept it for the rest of the year. Other counties caught a later wave and never caught up. As a result, “Bay Area smoke” was one regional event with ten different stories inside it. This is why the next chart looks at where and when the satellites and the monitors actually agreed.
+      </p>
+    </div>
+  </section>
+  </div><!-- /.linked-scope -->
+
+  <!-- 3. Agree bars -->
+  <section class="article-section" id="s3">
+    <div class="prose">
+      <h2>When the Sky and the Street Agreed</h2>
+      <p>
+        This is the main gap, and Sept. 9 was the clearest example of it. There was heavy smoke over every county and high PM2.5 in none. Across 2020, about <strong>85%</strong> of county-days with smoke overhead did <em>not</em> have high PM2.5 at the monitor. However, every county-day that crossed 35 had smoke overhead.
+      </p>
+      <p>
+        Press Play to go through Aug. 1 to Nov. 15, the same window we use for the five-year comparison later. Purple means the two agreed (smoke and high PM2.5). Darker gray means there was smoke, but the air on the ground was not unhealthy. The pale part is days with neither. We measured smoke over each county separately, so the counties did not even get the same sky. For example, satellites saw smoke over Santa Clara on 77 days but over Marin on only 62. The map next to the bars asks a sharper question: out of the days with smoke over a county, how many turned unhealthy at the monitor? Watch which counties get darker and which weeks make the purple grow.
+      </p>
+      <p class="note">
+        You can use the controls to change what counts as “high” PM2.5 and how thick the smoke has to be. The main pattern holds up. Most smoke days are not high-PM days, but high-PM days almost always have smoke overhead. A few exceptions only show up when you count Heavy smoke alone (11 of 117 high-PM county-days). These are shown in orange.
+      </p>
+    </div>
+    <div class="sel-bar p3-controls">
+      <div class="inner">
+        <span class="ctl"><span class="muted">Unhealthy air starts at</span>
+          <input type="range" id="p3-range" min="10" max="100" step="1" value="35" />
+          <b><span id="p3-thr">35</span> µg/m³</b>
+        </span>
+        <span class="ctl"><span class="muted">Smoke must be at least:</span>
+          <span id="p3-level">
+            <button type="button" data-level="1">Light</button>
+            <button type="button" data-level="2">Medium</button>
+            <button type="button" data-level="3">Heavy</button>
+          </span>
+        </span>
+        <button type="button" id="p3-clear" style="display:none">Clear highlight</button>
+        <button type="button" id="p3-reset">Reset</button>
+      </div>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-block">
+        <h3>How often did smoke overhead come with unhealthy air?</h3>
+        <ul class="hint-list">
+          <li><b>Map:</b> out of each county’s smoke days so far, the share that also had unhealthy air. Darker means smoke turned into bad air more often.</li>
+          <li><b>Bars:</b> every day since Aug. 1 for each county, split by what happened (see the colors below).</li>
+          <li><b>Try it:</b> press Play or drag the slider. Use the controls above to change what counts as unhealthy or as smoke. Click a county on either chart to highlight it.</li>
+        </ul>
+        <p class="summary" id="p3-sum"></p>
+        <div class="tm-controls">
+          <button type="button" id="p3-bars-play">Play</button>
+          <input type="range" id="p3-bars-slider" min="0" max="100" value="100" />
+          <span id="p3-bars-date">—</span>
+          <span class="muted">Showing Aug. 1 through this date</span>
+        </div>
+        <div class="legend" id="legend-bars"></div>
+        <div class="p3-grid">
+          <div id="v-county-map"></div>
+          <div id="v-county-bars"></div>
+        </div>
+        <p class="caveat" id="p3-bars-sum"></p>
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        Agreement came in short bursts, not over the whole season. It also depended on the county. About 23% of Santa Cruz’s smoke days had high PM2.5, compared with about 11% for Sonoma. By Nov. 15, there were only <strong>117</strong> county-days with both smoke and high PM2.5, spread across <strong>22</strong> calendar days. The gray smoke-only part still takes up far more of every bar than purple. Thus, smoke on a satellite map is a reason to check your local air monitor. It is not proof that the air outside is already dangerous.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. Year lapse -->
+  <section class="article-section" id="s4">
+    <div class="prose">
+      <h2>2020 Was Not Only Bad. It Stayed Bad.</h2>
+      <p>
+        Was 2020 a fair test, or was it just an unusual year? We don’t have the same satellite data for other years. So this section asks a narrower question: how long did the bad air last? Press Play to compare 2017 to 2021 over the same fire-season window. Other years had spikes too. For example, 2018 looks intense for a short stretch, but then it fades. What made 2020 different was how long it lasted. It had more days with any county at or above 35, and the bad air went on for weeks instead of peaking once.
+      </p>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-block">
+        <h3>How long did unhealthy air last, 2017 to 2021?</h3>
+        <ul class="hint-list">
+          <li><b>Each row:</b> one year’s fire season, one thin stripe per day. Darker red means worse air (the Bay-wide median PM2.5).</li>
+          <li><b>Right side:</b> each year’s worst day so far, with its date and level.</li>
+          <li><b>Red bars below:</b> how many days at least one county had unhealthy air (35 µg/m³ or more).</li>
+          <li><b>Try it:</b> press Play to watch the years build up together. Switch to Full year to see fires that came after Nov. 15.</li>
+        </ul>
+        <div class="seg" id="yr-window">
+          <div class="grp">
+            <span>Window</span>
+            <button type="button" data-w="season" class="on">Aug 1 – Nov 15</button>
+            <button type="button" data-w="all">Full year</button>
+          </div>
+        </div>
+        <div class="tm-controls">
+          <button type="button" id="yr-play">Play</button>
+          <input type="range" id="yr-slider" min="0" max="100" value="100" />
+          <span id="yr-label">—</span>
+        </div>
+        <div class="legend" id="legend-years"></div>
+        <div id="v-years"></div>
+        <p class="hint" style="margin:14px 0 4px;color:#7f1d1d">Days so far when at least one county had unhealthy air (35 µg/m³ or more)</p>
+        <div id="v-cum"></div>
+        <p class="takeaway" id="years-sum"></p>
+
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        So 2020 was not just a trick of memory. It had more days with a county at or above 35 (22) than any other year from 2017 to 2021. This makes it the hardest test of the warning-sign rule. It also leads to our last question: when smoke is already overhead, does a fire in your own county change the odds of bad air?
+      </p>
+    </div>
+  </section>
+
+  <!-- 5. Local fire -->
+  <section class="article-section" id="s5">
+    <div class="prose">
+      <h2>What Changes When the Fire Is in Your County</h2>
+      <p>
+        From space, smoke from a faraway fire and smoke from a nearby fire look the same. To compare them, we only looked at smoke days. Then we split those county-days into two groups: days with an active CalFire fire in that county and days without one. We focused on Aug. 16 to Oct. 31, the weeks when local fires were actually burning, so both groups come from the same part of the season. In that window, about <strong>24%</strong> of smoke days with a local fire had PM2.5 at or above 35. Without a local fire, it was about <strong>7%</strong>. You can click your county to focus on it.
+      </p>
+      <p>
+        If you switch to Heavy smoke, both rates go up, to about 34% and 24%. As a result, the gap gets smaller. Under thick smoke, bad air becomes more likely whether or not the fire is local. However, this is more of a hint than a finding. Only 58 heavy-smoke county-days had no local fire, which is too few to compare most counties.
+      </p>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-block">
+        <h3>On smoky days, how often was the air unhealthy, with and without a fire in the county?</h3>
+        <ul class="hint-list">
+          <li><b>Top bars:</b> out of all smoky county-days, the share with unhealthy air (35 µg/m³ or more). Gray is days with no fire in the county. Teal is days with a fire burning in the county, the same color as the fires on the timeline.</li>
+          <li><b>County rows:</b> the same comparison for each county. The number on the right is the gap in percentage points.</li>
+          <li><b>Try it:</b> click counties to focus the top bars on them. Change how thick the smoke must be, or switch between peak season (Aug. 16 to Oct. 31) and the whole year.</li>
+        </ul>
+        <div class="seg">
+          <span class="grp" id="lf-hms"><span>Smoke must be at least</span>
+            <input type="range" id="lf-hms-range" min="1" max="3" step="1" value="1" style="width:140px;margin:0 8px" />
+            <b id="lf-hms-label">Light</b>
+          </span>
+          <span class="grp" id="lf-season"><span>Period</span>
+            <button type="button" data-v="year">Whole year</button>
+            <button type="button" data-v="season" class="on">Peak season (Aug 16 – Oct 31)</button>
+          </span>
+          <button type="button" id="lf-clear" style="display:none">Clear county selection</button>
+        </div>
+        <p class="takeaway" id="local-sum"></p>
+        <div id="v-local"></div>
+        <p class="hint" style="margin:18px 0 6px">By county: share of smoky days with unhealthy air</p>
+        <div class="legend" id="legend-local"></div>
+        <div id="v-local-counties"></div>
+        <p class="caveat" id="local-drop" style="margin-top:8px"></p>
+        <p class="caveat">Fires in the county mostly happened during peak season, so timing and distance are mixed together here. “Fire in the county” means a CalFire fire was burning somewhere in the county, not necessarily next to a monitor.</p>
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        None of this replaces checking a local air quality forecast. However, it does change how to read the next orange afternoon. Smoke overhead is a warning sign, not a verdict. Look at the whole season, not just the photo. Check your own county, not just the regional headline. Look at whether smoke and high PM2.5 are actually showing up together that day. And check whether a fire is burning in your county while smoke is already overhead. The sky can look like the whole story, but the monitors, the satellites and the fire maps together get us closer to the truth.
+      </p>
+    </div>
+  </section>
+
+  <footer class="article-end">
+    <h2>About the data</h2>
+    <p>
+      Daily PM2.5 comes from EPA AirData for ten Bay Area counties. Satellite smoke comes from NOAA’s Hazard Mapping
+      System, and fire dates come from CalFire. For each county and day, smoke is the thickest satellite smoke area
+      that covers at least 5% of the county. The first chart’s smoke strip shows the thickest smoke over any of the ten
+      counties. A county’s PM2.5 for a day is the average of its reporting monitors. More notes are in
+      <a href="DATA.md">DATA.md</a>.
+    </p>
+    <p>
+      <b>What “high PM2.5” means in each chart.</b> Every chart uses EPA’s 35 µg/m³ “unhealthy for sensitive groups”
+      level, but at different scales. The first chart counts days when the <em>Bay-wide median</em> crossed it. The
+      county race, the agreement bars and the local-fire comparison count <em>county-days</em> (one county on one day).
+      The five-year comparison counts days when <em>any</em> county crossed it. This is why the same season can show
+      10 high days, 22 days or 117 county-days depending on the chart.
+    </p>
+    <p>
+      <b>Date windows.</b> The timeline and county race cover all of 2020. The agreement bars and five-year comparison
+      use the Aug. 1 to Nov. 15 fire season. The local-fire comparison uses Aug. 16 to Oct. 31 by default, when local
+      fires were burning.
+    </p>
+  </footer>
+
+  <script src="js/shared.js?v=color7"></script>
+  <script src="js/timeline.js?v=color7"></script>
+  <script src="js/part3.js?v=color7"></script>
+  <script src="js/part4.js?v=color7"></script>
+</body>
+</html>

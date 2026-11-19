@@ -1,0 +1,367 @@
+date,n_counties,median_pm25,mean_pm25,max_pm25,hms_max_density,hms_n_polys,hms_heavy,hms_medium,hms_light,active_fire_acres,active_fire_count,active_fire_names,bay_fire_active,high_pm,attribution
+2020-01-01,10,11.42,10.52,14.76,0,0,0,0,0,0,0,,0,0,clear
+2020-01-02,10,7.56,7.24,9.82,0,0,0,0,0,0,0,,0,0,clear
+2020-01-03,10,16.2,15.73,24.96,0,0,0,0,0,0,0,,0,0,clear
+2020-01-04,10,8.36,8.14,11.5,0,0,0,0,0,0,0,,0,0,clear
+2020-01-05,10,5.43,5.7,8.17,0,0,0,0,0,0,0,,0,0,clear
+2020-01-06,10,6.65,6.89,10.43,0,0,0,0,0,0,0,,0,0,clear
+2020-01-07,10,7.25,7.47,10.46,0,0,0,0,0,0,0,,0,0,clear
+2020-01-08,10,4.73,4.55,5.65,0,0,0,0,0,0,0,,0,0,clear
+2020-01-09,10,5.22,5.24,8.43,0,0,0,0,0,0,0,,0,0,clear
+2020-01-10,10,6.23,6.61,9.54,0,0,0,0,0,0,0,,0,0,clear
+2020-01-11,10,6.68,6.57,8.85,0,0,0,0,0,0,0,,0,0,clear
+2020-01-12,10,6.06,5.94,7.95,0,0,0,0,0,0,0,,0,0,clear
+2020-01-13,10,4.09,4.31,5.83,0,0,0,0,0,0,0,,0,0,clear
+2020-01-14,10,6.13,6.06,7.3,0,0,0,0,0,0,0,,0,0,clear
+2020-01-15,10,6.13,6.25,9.38,0,0,0,0,0,0,0,,0,0,clear
+2020-01-16,10,4.22,4.46,6.62,0,0,0,0,0,0,0,,0,0,clear
+2020-01-17,10,6.93,6.67,10.09,0,0,0,0,0,0,0,,0,0,clear
+2020-01-18,10,6.43,6.76,11.18,0,0,0,0,0,0,0,,0,0,clear
+2020-01-19,10,9.54,9.65,13.99,0,0,0,0,0,0,0,,0,0,clear
+2020-01-20,10,15.03,13.83,18.38,0,0,0,0,0,0,0,,0,0,clear
+2020-01-21,10,4.97,5.53,8.49,0,0,0,0,0,0,0,,0,0,clear
+2020-01-22,10,5.82,5.66,8.84,0,0,0,0,0,0,0,,0,0,clear
+2020-01-23,10,9.06,8.48,12.75,0,0,0,0,0,0,0,,0,0,clear
+2020-01-24,10,7.52,8.05,9.87,0,0,0,0,0,0,0,,0,0,clear
+2020-01-25,10,9.34,9.41,13.88,0,0,0,0,0,0,0,,0,0,clear
+2020-01-26,10,4.7,4.59,5.33,0,0,0,0,0,0,0,,0,0,clear
+2020-01-27,10,7.02,6.53,7.79,0,0,0,0,0,0,0,,0,0,clear
+2020-01-28,10,7.5,6.99,7.91,0,0,0,0,0,0,0,,0,0,clear
+2020-01-29,10,8.25,8.14,10.63,0,0,0,0,0,0,0,,0,0,clear
+2020-01-30,10,7.59,7.04,8.33,0,0,0,0,0,0,0,,0,0,clear
+2020-01-31,10,10.02,9.99,14.43,0,0,0,0,0,0,0,,0,0,clear
+2020-02-01,10,16.0,14.76,19.91,0,0,0,0,0,0,0,,0,0,clear
+2020-02-02,10,5.5,5.75,8.63,0,0,0,0,0,0,0,,0,0,clear
+2020-02-03,10,3.01,2.96,4.58,0,0,0,0,0,0,0,,0,0,clear
+2020-02-04,10,3.88,4.24,7.18,0,0,0,0,0,0,0,,0,0,clear
+2020-02-05,10,7.66,7.67,11.13,0,0,0,0,0,0,0,,0,0,clear
+2020-02-06,10,10.43,10.89,17.71,0,0,0,0,0,0,0,,0,0,clear
+2020-02-07,10,12.93,12.78,18.77,0,0,0,0,0,0,0,,0,0,clear
+2020-02-08,10,8.83,8.69,12.89,0,0,0,0,0,0,0,,0,0,clear
+2020-02-09,10,3.03,3.45,9.02,0,0,0,0,0,0,0,,0,0,clear
+2020-02-10,10,4.76,3.99,6.11,0,0,0,0,0,0,0,,0,0,clear
+2020-02-11,10,5.21,5.26,9.2,1,1,0,0,1,0,0,,0,0,hms_only
+2020-02-12,10,7.95,9.13,13.54,0,0,0,0,0,0,0,,0,0,clear
+2020-02-13,10,7.67,7.67,9.48,1,1,0,0,1,0,0,,0,0,hms_only
+2020-02-14,10,8.63,8.9,11.6,0,0,0,0,0,0,0,,0,0,clear
+2020-02-15,10,11.11,10.88,14.02,0,0,0,0,0,0,0,,0,0,clear
+2020-02-16,10,6.61,6.55,7.76,0,0,0,0,0,0,0,,0,0,clear
+2020-02-17,10,6.28,6.49,9.34,0,0,0,0,0,0,0,,0,0,clear
+2020-02-18,10,7.74,7.32,8.13,0,0,0,0,0,0,0,,0,0,clear
+2020-02-19,10,9.39,9.05,11.66,1,1,0,0,1,0,0,,0,0,hms_only
+2020-02-20,10,11.98,11.15,13.74,0,0,0,0,0,0,0,,0,0,clear
+2020-02-21,10,11.83,11.57,15.75,0,0,0,0,0,0,0,,0,0,clear
+2020-02-22,10,12.63,11.71,14.18,1,1,0,0,1,0,0,,0,0,hms_only
+2020-02-23,10,7.02,6.63,7.93,0,0,0,0,0,0,0,,0,0,clear
+2020-02-24,10,6.54,6.53,10.16,0,0,0,0,0,0,0,,0,0,clear
+2020-02-25,10,6.6,7.24,11.41,0,0,0,0,0,0,0,,0,0,clear
+2020-02-26,10,9.75,9.57,14.72,0,0,0,0,0,0,0,,0,0,clear
+2020-02-27,10,13.01,11.02,15.43,0,0,0,0,0,0,0,,0,0,clear
+2020-02-28,10,12.34,11.45,14.41,0,0,0,0,0,0,0,,0,0,clear
+2020-02-29,10,8.2,7.72,9.32,0,0,0,0,0,0,0,,0,0,clear
+2020-03-01,10,4.91,5.15,9.71,0,0,0,0,0,0,0,,0,0,clear
+2020-03-02,10,3.63,3.44,4.93,1,2,0,0,2,0,0,,0,0,hms_only
+2020-03-03,10,7.0,7.17,12.43,0,0,0,0,0,0,0,,0,0,clear
+2020-03-04,10,10.49,9.57,13.34,1,1,0,0,1,0,0,,0,0,hms_only
+2020-03-05,10,9.34,9.44,11.7,1,1,0,0,1,0,0,,0,0,hms_only
+2020-03-06,10,3.82,3.62,6.43,0,0,0,0,0,0,0,,0,0,clear
+2020-03-07,10,2.73,2.67,4.72,0,0,0,0,0,0,0,,0,0,clear
+2020-03-08,10,3.75,4.01,6.93,0,0,0,0,0,0,0,,0,0,clear
+2020-03-09,10,4.53,4.38,7.08,0,0,0,0,0,0,0,,0,0,clear
+2020-03-10,10,5.42,5.17,7.67,0,0,0,0,0,0,0,,0,0,clear
+2020-03-11,10,5.88,5.2,7.29,0,0,0,0,0,0,0,,0,0,clear
+2020-03-12,10,8.52,7.32,9.54,1,1,0,0,1,0,0,,0,0,hms_only
+2020-03-13,10,11.17,11.41,14.34,0,0,0,0,0,0,0,,0,0,clear
+2020-03-14,10,3.73,3.64,5.86,0,0,0,0,0,0,0,,0,0,clear
+2020-03-15,10,3.2,3.18,4.74,0,0,0,0,0,0,0,,0,0,clear
+2020-03-16,10,3.13,2.93,4.5,0,0,0,0,0,0,0,,0,0,clear
+2020-03-17,9,4.12,4.2,6.58,0,0,0,0,0,0,0,,0,0,clear
+2020-03-18,9,3.84,3.91,4.83,0,0,0,0,0,0,0,,0,0,clear
+2020-03-19,10,5.22,5.05,7.64,0,0,0,0,0,0,0,,0,0,clear
+2020-03-20,10,5.46,5.36,9.36,0,0,0,0,0,0,0,,0,0,clear
+2020-03-21,6,5.2,4.78,5.83,0,0,0,0,0,0,0,,0,0,clear
+2020-03-22,6,5.76,5.08,6.28,0,0,0,0,0,0,0,,0,0,clear
+2020-03-23,9,5.65,5.48,7.25,0,0,0,0,0,0,0,,0,0,clear
+2020-03-24,10,2.69,2.82,4.27,0,0,0,0,0,0,0,,0,0,clear
+2020-03-25,10,2.84,2.59,3.74,0,0,0,0,0,0,0,,0,0,clear
+2020-03-26,10,3.41,3.19,4.69,0,0,0,0,0,0,0,,0,0,clear
+2020-03-27,10,7.9,7.95,9.18,0,0,0,0,0,0,0,,0,0,clear
+2020-03-28,10,9.82,9.72,11.2,0,0,0,0,0,0,0,,0,0,clear
+2020-03-29,10,5.54,5.56,6.92,0,0,0,0,0,0,0,,0,0,clear
+2020-03-30,10,2.12,2.14,4.18,0,0,0,0,0,0,0,,0,0,clear
+2020-03-31,10,2.17,2.36,3.98,0,0,0,0,0,0,0,,0,0,clear
+2020-04-01,10,4.85,4.39,5.84,0,0,0,0,0,0,0,,0,0,clear
+2020-04-02,10,3.67,3.91,5.84,0,0,0,0,0,0,0,,0,0,clear
+2020-04-03,10,4.26,4.45,6.13,0,0,0,0,0,0,0,,0,0,clear
+2020-04-04,10,2.93,2.88,3.88,0,0,0,0,0,0,0,,0,0,clear
+2020-04-05,10,2.43,2.38,4.61,0,0,0,0,0,0,0,,0,0,clear
+2020-04-06,10,3.66,3.78,6.32,0,0,0,0,0,0,0,,0,0,clear
+2020-04-07,10,3.83,3.73,6.14,0,0,0,0,0,0,0,,0,0,clear
+2020-04-08,10,6.11,5.57,6.97,0,0,0,0,0,0,0,,0,0,clear
+2020-04-09,10,3.25,3.39,5.29,0,0,0,0,0,0,0,,0,0,clear
+2020-04-10,10,4.58,4.44,5.47,0,0,0,0,0,0,0,,0,0,clear
+2020-04-11,10,4.04,4.3,5.89,0,0,0,0,0,0,0,,0,0,clear
+2020-04-12,10,8.13,8.01,12.33,0,0,0,0,0,0,0,,0,0,clear
+2020-04-13,10,10.14,10.36,12.93,0,0,0,0,0,0,0,,0,0,clear
+2020-04-14,10,6.7,6.25,8.93,0,0,0,0,0,0,0,,0,0,clear
+2020-04-15,10,7.63,8.0,11.51,0,0,0,0,0,0,0,,0,0,clear
+2020-04-16,10,5.36,4.97,6.17,0,0,0,0,0,0,0,,0,0,clear
+2020-04-17,10,6.11,5.83,8.58,0,0,0,0,0,0,0,,0,0,clear
+2020-04-18,10,5.5,5.7,7.13,0,0,0,0,0,0,0,,0,0,clear
+2020-04-19,10,5.61,5.45,7.01,0,0,0,0,0,0,0,,0,0,clear
+2020-04-20,10,5.22,5.2,7.11,0,0,0,0,0,0,0,,0,0,clear
+2020-04-21,10,5.61,5.46,7.22,1,1,0,0,1,0,0,,0,0,hms_only
+2020-04-22,10,4.32,4.39,5.58,0,0,0,0,0,0,0,,0,0,clear
+2020-04-23,10,3.81,3.72,5.07,0,0,0,0,0,0,0,,0,0,clear
+2020-04-24,10,6.22,6.36,9.5,2,3,0,1,2,0,0,,0,0,hms_only
+2020-04-25,10,6.51,5.79,7.13,0,0,0,0,0,0,0,,0,0,clear
+2020-04-26,10,4.26,4.18,6.62,0,0,0,0,0,0,0,,0,0,clear
+2020-04-27,10,5.79,5.39,7.16,0,0,0,0,0,47,1,Byron Fire,1,0,fire_only
+2020-04-28,10,4.36,4.07,5.59,0,0,0,0,0,47,1,Byron Fire,1,0,fire_only
+2020-04-29,10,3.02,2.87,4.17,0,0,0,0,0,0,0,,0,0,clear
+2020-04-30,10,4.59,4.23,5.83,0,0,0,0,0,0,0,,0,0,clear
+2020-05-01,10,5.02,4.79,5.75,0,0,0,0,0,0,0,,0,0,clear
+2020-05-02,10,2.73,3.11,5.39,0,0,0,0,0,0,0,,0,0,clear
+2020-05-03,10,4.14,3.76,5.52,0,0,0,0,0,0,0,,0,0,clear
+2020-05-04,10,5.27,5.11,7.11,0,0,0,0,0,0,0,,0,0,clear
+2020-05-05,10,4.41,4.39,5.16,0,0,0,0,0,0,0,,0,0,clear
+2020-05-06,10,6.17,6.12,9.52,0,0,0,0,0,0,0,,0,0,clear
+2020-05-07,10,8.23,8.29,15.04,0,0,0,0,0,0,0,,0,0,clear
+2020-05-08,10,10.29,9.32,12.83,0,0,0,0,0,0,0,,0,0,clear
+2020-05-09,10,8.13,7.35,9.39,0,0,0,0,0,0,0,,0,0,clear
+2020-05-10,10,7.34,7.23,11.17,0,0,0,0,0,0,0,,0,0,clear
+2020-05-11,10,4.64,4.48,5.68,0,0,0,0,0,0,0,,0,0,clear
+2020-05-12,10,3.61,3.39,5.18,0,0,0,0,0,0,0,,0,0,clear
+2020-05-13,10,4.24,4.22,6.26,0,0,0,0,0,0,0,,0,0,clear
+2020-05-14,10,3.34,3.22,5.02,0,0,0,0,0,0,0,,0,0,clear
+2020-05-15,10,3.11,2.94,3.74,0,0,0,0,0,0,0,,0,0,clear
+2020-05-16,10,2.33,2.29,3.87,0,0,0,0,0,0,0,,0,0,clear
+2020-05-17,10,3.11,3.32,6.13,0,0,0,0,0,0,0,,0,0,clear
+2020-05-18,10,3.41,3.28,5.82,0,0,0,0,0,0,0,,0,0,clear
+2020-05-19,10,4.11,3.67,5.07,0,0,0,0,0,0,0,,0,0,clear
+2020-05-20,10,4.48,4.46,6.83,0,0,0,0,0,0,0,,0,0,clear
+2020-05-21,10,6.11,5.64,8.75,0,0,0,0,0,0,0,,0,0,clear
+2020-05-22,10,6.89,6.31,8.32,0,0,0,0,0,20,1,Spanish Fire,1,0,fire_only
+2020-05-23,10,8.34,7.4,10.63,0,0,0,0,0,20,1,Spanish Fire,1,0,fire_only
+2020-05-24,10,8.34,8.52,12.22,1,1,0,0,1,0,0,,0,0,hms_only
+2020-05-25,10,8.11,8.46,12.13,0,0,0,0,0,0,0,,0,0,clear
+2020-05-26,10,9.61,9.17,12.14,3,3,1,0,2,0,0,,0,0,hms_only
+2020-05-27,10,8.93,8.47,10.93,0,0,0,0,0,0,0,,0,0,clear
+2020-05-28,10,4.25,4.38,5.86,0,0,0,0,0,0,0,,0,0,clear
+2020-05-29,10,3.08,3.1,5.77,0,0,0,0,0,0,0,,0,0,clear
+2020-05-30,10,4.13,4.4,7.04,0,0,0,0,0,0,0,,0,0,clear
+2020-05-31,10,3.74,3.57,7.54,0,0,0,0,0,60,1,Creek Fire,1,0,fire_only
+2020-06-01,10,6.82,6.48,8.5,0,0,0,0,0,60,1,Creek Fire,1,0,fire_only
+2020-06-02,10,8.58,8.45,13.02,0,0,0,0,0,60,1,Creek Fire,1,0,fire_only
+2020-06-03,10,9.91,9.8,15.25,1,1,0,0,1,60,1,Creek Fire,1,0,fire+hms
+2020-06-04,10,13.02,12.53,18.0,0,0,0,0,0,379,3,Wildlife Fire|Creek Fire|Silver Fire,1,0,fire_only
+2020-06-05,10,9.0,7.98,12.84,0,0,0,0,0,346,4,Lakeville Fire|Colleen Fire|Creek Fire|Silver Fire,1,0,fire_only
+2020-06-06,10,4.96,4.5,6.36,3,11,2,3,6,2290,6,Quail Fire|Lakeville Fire|Colleen Fire|Gulch Fire,1,0,fire+hms
+2020-06-07,10,3.87,3.57,5.43,0,0,0,0,0,2390,7,Quail Fire|Lakeville Fire|Colleen Fire|Gulch Fire,1,0,fire_only
+2020-06-08,10,3.25,3.2,5.93,0,0,0,0,0,2023,4,Quail Fire|Gulch Fire|Creek Fire|Silver Fire,1,0,fire_only
+2020-06-09,10,4.61,4.79,7.83,1,1,0,0,1,2023,4,Quail Fire|Gulch Fire|Creek Fire|Silver Fire,1,0,fire+hms
+2020-06-10,10,4.7,4.66,6.66,0,0,0,0,0,1916,3,Quail Fire|Creek Fire|Silver Fire,1,0,fire_only
+2020-06-11,10,2.82,2.94,4.72,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-12,10,4.08,3.83,5.25,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-13,10,3.07,3.04,4.88,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-14,10,2.45,2.08,3.02,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-15,10,3.53,3.36,5.22,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-16,10,4.82,4.64,7.91,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-17,10,4.43,4.24,7.52,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-18,10,6.72,7.64,14.04,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-19,10,7.66,7.01,9.25,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-20,10,4.93,4.69,6.34,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-21,10,4.46,4.53,6.37,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-22,10,6.42,5.84,7.0,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-23,10,4.59,4.08,6.34,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-24,10,6.0,5.35,6.65,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-25,10,4.21,3.84,5.26,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-26,10,4.84,4.63,6.08,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-27,10,5.61,5.08,7.78,1,1,0,0,1,79,2,Creek Fire|Silver Fire,1,0,fire+hms
+2020-06-28,10,11.05,9.99,13.82,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-29,10,10.37,10.46,14.02,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-06-30,10,11.54,11.23,13.84,1,1,0,0,1,79,2,Creek Fire|Silver Fire,1,0,fire+hms
+2020-07-01,10,10.77,10.04,11.54,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-07-02,10,8.93,7.9,9.96,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-07-03,10,9.18,8.94,11.11,0,0,0,0,0,79,2,Creek Fire|Silver Fire,1,0,fire_only
+2020-07-04,10,17.03,16.12,23.58,1,2,0,0,2,540,4,Park Fire|Sheridan Fire|Creek Fire|Silver Fire,1,0,fire+hms
+2020-07-05,10,14.21,13.39,17.4,2,5,0,1,4,6053,5,Crews Fire|Park Fire|Sheridan Fire|Creek Fire,1,0,fire+hms
+2020-07-06,10,8.89,7.88,10.48,2,15,0,4,11,6351,6,Crews Fire|Park Fire|California Fire|Sheridan Fire,1,0,fire+hms
+2020-07-07,10,9.15,8.67,10.7,1,2,0,0,2,6318,6,Crews Fire|Park Fire|California Fire|Mountain Meadow Fire,1,0,fire+hms
+2020-07-08,10,9.76,9.29,11.7,0,0,0,0,0,5965,5,Crews Fire|California Fire|Mountain Meadow Fire|Creek Fire,1,0,fire_only
+2020-07-09,10,11.32,9.92,12.3,0,0,0,0,0,5965,5,Crews Fire|California Fire|Mountain Meadow Fire|Creek Fire,1,0,fire_only
+2020-07-10,10,5.82,5.51,6.5,0,0,0,0,0,5890,4,Crews Fire|California Fire|Creek Fire|Silver Fire,1,0,fire_only
+2020-07-11,10,8.63,8.42,10.34,0,0,0,0,0,5921,5,Crews Fire|California Fire|Creek Fire|Alum Fire,1,0,fire_only
+2020-07-12,10,10.06,9.39,11.36,0,0,0,0,0,5921,5,Crews Fire|California Fire|Creek Fire|Alum Fire,1,0,fire_only
+2020-07-13,10,11.46,10.87,13.07,0,0,0,0,0,5890,4,Crews Fire|California Fire|Creek Fire|Silver Fire,1,0,fire_only
+2020-07-14,10,8.77,8.18,10.27,0,0,0,0,0,5890,4,Crews Fire|California Fire|Creek Fire|Silver Fire,1,0,fire_only
+2020-07-15,10,5.0,4.42,6.51,2,3,0,1,2,377,3,California Fire|Creek Fire|Silver Fire,1,0,fire+hms
+2020-07-16,10,4.63,3.69,5.61,1,1,0,0,1,317,2,California Fire|Silver Fire,1,0,fire+hms
+2020-07-17,10,3.73,3.62,5.82,3,9,1,1,7,570,3,California Fire|Hollow Fire|Silver Fire,1,0,fire+hms
+2020-07-18,10,4.22,3.78,5.82,3,11,1,3,7,570,3,California Fire|Hollow Fire|Silver Fire,1,0,fire+hms
+2020-07-19,10,3.7,3.81,7.24,1,1,0,0,1,570,3,California Fire|Hollow Fire|Silver Fire,1,0,fire+hms
+2020-07-20,10,2.72,2.68,4.82,2,8,0,2,6,298,1,California Fire,1,0,fire+hms
+2020-07-21,9,1.93,2.29,4.79,1,1,0,0,1,298,1,California Fire,1,0,fire+hms
+2020-07-22,10,2.75,2.02,3.19,1,1,0,0,1,298,1,California Fire,1,0,fire+hms
+2020-07-23,10,3.38,2.98,4.64,0,0,0,0,0,298,1,California Fire,1,0,fire_only
+2020-07-24,10,7.34,6.77,9.07,1,2,0,0,2,83559,2,July Complex|California Fire,1,0,fire+hms
+2020-07-25,10,8.34,7.98,11.6,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-07-26,10,6.82,6.13,8.49,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-07-27,10,4.2,3.98,6.89,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-07-28,10,5.63,5.38,9.41,1,2,0,0,2,83559,2,July Complex|California Fire,1,0,fire+hms
+2020-07-29,10,3.65,3.55,6.95,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-07-30,10,4.56,4.21,7.19,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-07-31,10,5.2,4.95,7.29,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-01,10,3.23,3.69,5.66,2,3,0,1,2,83559,2,July Complex|California Fire,1,0,fire+hms
+2020-08-02,10,4.29,4.29,5.82,1,1,0,0,1,83559,2,July Complex|California Fire,1,0,fire+hms
+2020-08-03,10,5.81,5.63,7.0,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-04,10,5.82,5.7,7.91,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-05,10,6.33,5.99,7.84,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-06,10,6.13,5.47,6.91,1,1,0,0,1,83559,2,July Complex|California Fire,1,0,fire+hms
+2020-08-07,10,9.59,8.8,12.61,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-08,10,9.02,8.19,10.79,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-09,10,7.17,6.81,8.41,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-10,10,5.99,6.08,8.84,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-11,10,5.15,5.34,7.93,1,1,0,0,1,83559,2,July Complex|California Fire,1,0,fire+hms
+2020-08-12,10,4.51,4.81,9.12,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-13,10,8.45,8.92,13.25,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-14,10,7.93,7.86,10.25,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-15,10,8.54,8.94,11.7,0,0,0,0,0,83559,2,July Complex|California Fire,1,0,fire_only
+2020-08-16,10,10.22,10.36,13.71,2,6,0,2,4,1599340,5,August Complex (includes Doe Fire)|SCU Lightning Complex|CZU Lightning Complex (Including Warnella Fire)|July Complex,1,0,fire+hms
+2020-08-17,10,6.91,7.41,12.64,2,3,0,1,2,1962560,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-18,10,11.44,17.56,52.29,3,10,3,5,2,1967489,7,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-19,10,39.75,34.96,78.29,3,25,15,4,6,1967489,7,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,1,fire+hms+highPM
+2020-08-20,10,23.27,32.21,139.77,3,10,5,3,2,1967489,7,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-21,10,28.34,45.05,219.87,3,12,7,3,2,1884073,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-22,10,42.73,54.61,208.08,3,9,6,2,1,1884073,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,1,fire+hms+highPM
+2020-08-23,10,50.2,46.46,78.81,3,8,3,2,3,1884073,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,1,fire+hms+highPM
+2020-08-24,10,34.37,36.25,54.33,3,8,4,2,2,1884073,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-25,10,27.17,27.93,45.19,3,14,1,6,7,1884073,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-26,10,14.29,19.57,68.36,3,5,3,1,1,1884073,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-27,10,12.02,22.2,96.63,3,9,1,1,7,1884073,6,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-28,10,23.37,22.62,33.75,3,19,5,5,9,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-29,10,18.33,17.91,34.93,3,11,4,3,4,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-30,10,16.63,20.98,45.66,3,15,5,4,6,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-08-31,10,22.02,22.15,34.04,3,13,6,3,4,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-09-01,10,15.79,15.95,23.93,3,5,3,1,1,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-09-02,10,13.07,14.59,33.61,3,3,1,1,1,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-09-03,10,13.46,15.63,28.78,3,9,1,4,4,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-09-04,10,17.55,16.88,26.63,3,7,1,3,3,1883930,5,August Complex (includes Doe Fire)|SCU Lightning Complex|LNU Lightning Complex|CZU Lightning Complex (Including Warnella Fire),1,0,fire+hms
+2020-09-05,10,20.08,19.47,23.51,3,15,6,3,6,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-06,10,31.73,28.95,37.85,3,5,1,3,1,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-07,10,24.04,22.89,32.67,3,6,2,2,2,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-08,10,19.19,18.22,27.91,3,11,3,5,3,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-09,10,27.84,25.7,31.43,3,9,3,3,3,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-10,10,87.3,82.65,123.52,3,6,2,2,2,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,1,fire+hms+highPM
+2020-09-11,10,129.96,123.58,155.52,3,4,2,1,1,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,1,fire+hms+highPM
+2020-09-12,10,98.21,94.37,111.71,3,6,2,2,2,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,1,fire+hms+highPM
+2020-09-13,10,95.92,93.85,110.75,3,7,2,3,2,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,1,fire+hms+highPM
+2020-09-14,10,105.57,99.3,116.04,3,6,2,2,2,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,1,fire+hms+highPM
+2020-09-15,10,26.49,25.48,48.29,3,3,1,1,1,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-16,10,4.1,4.44,13.56,3,3,1,1,1,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-17,10,4.13,4.18,5.63,3,3,1,1,1,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-18,10,6.32,6.53,8.25,2,6,0,2,4,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-19,10,9.17,8.99,11.96,3,5,1,2,2,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-20,10,16.94,16.27,20.25,3,5,1,2,2,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-21,10,14.72,14.46,20.2,3,10,4,3,3,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-22,10,4.84,4.58,6.0,1,1,0,0,1,2263825,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-23,10,3.72,3.35,4.7,2,3,0,1,2,2177316,5,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-24,10,3.85,3.46,4.61,2,2,0,1,1,2177316,5,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-25,10,9.53,8.5,10.21,1,2,0,0,2,2177316,5,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-26,10,6.57,6.64,9.42,2,3,0,2,1,2177316,5,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-27,10,11.67,12.24,17.91,3,6,2,2,2,2244800,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-28,10,17.34,16.91,29.93,3,9,3,4,2,2244800,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-29,10,8.47,8.12,15.04,3,3,1,1,1,2244800,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-09-30,10,28.52,26.13,55.72,3,7,1,3,3,2244800,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,0,fire+hms
+2020-10-01,10,50.64,56.46,112.82,3,7,2,2,3,2244800,6,August Complex (includes Doe Fire)|SCU Lightning Complex|Creek Fire|LNU Lightning Complex,1,1,fire+hms+highPM
+2020-10-02,10,69.08,67.62,148.54,3,9,3,3,3,1848176,5,August Complex (includes Doe Fire)|Creek Fire|LNU Lightning Complex|Glass Fire,1,1,fire+hms+highPM
+2020-10-03,10,24.0,24.77,54.2,3,7,3,2,2,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-04,10,10.32,9.62,11.84,3,14,2,4,8,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-05,10,13.15,13.65,23.41,3,10,1,5,4,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-06,10,15.4,15.34,20.32,2,4,0,1,3,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-07,10,27.52,26.12,28.64,3,6,2,2,2,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-08,10,21.7,21.85,34.13,3,5,1,2,2,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-09,10,2.92,4.44,12.13,2,4,0,2,2,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-10,10,2.82,2.96,7.02,1,1,0,0,1,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-11,10,5.88,5.28,7.32,1,2,0,0,2,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-12,10,8.91,8.47,11.01,0,0,0,0,0,1480057,4,August Complex (includes Doe Fire)|Creek Fire|Glass Fire|Irvine Fire,1,0,fire_only
+2020-10-13,10,9.93,8.91,11.77,1,1,0,0,1,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-14,10,7.43,7.86,11.75,0,0,0,0,0,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire_only
+2020-10-15,10,8.75,8.98,14.34,1,6,0,0,6,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-16,10,9.03,8.17,10.93,2,4,0,1,3,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-17,10,9.47,8.86,12.76,2,3,0,2,1,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-18,10,9.34,8.87,12.5,1,2,0,0,2,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-19,10,8.3,7.48,8.86,1,1,0,0,1,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-20,10,8.73,7.67,10.81,1,1,0,0,1,1480027,3,August Complex (includes Doe Fire)|Creek Fire|Glass Fire,1,0,fire+hms
+2020-10-21,10,10.37,9.32,13.2,1,1,0,0,1,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-10-22,10,10.21,9.5,11.14,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-10-23,10,9.11,8.62,11.39,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-10-24,10,8.13,8.04,11.3,0,0,0,0,0,1032709,2,August Complex (includes Doe Fire)|Pope Fire,1,0,fire_only
+2020-10-25,10,7.93,7.4,9.03,0,0,0,0,0,1032709,2,August Complex (includes Doe Fire)|Pope Fire,1,0,fire_only
+2020-10-26,10,8.79,8.39,12.12,2,5,0,2,3,1032709,2,August Complex (includes Doe Fire)|Pope Fire,1,0,fire+hms
+2020-10-27,10,8.38,8.07,10.95,1,2,0,0,2,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-10-28,10,12.2,12.34,16.27,2,2,0,1,1,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-10-29,10,17.58,15.86,18.43,2,5,0,2,3,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-10-30,10,14.7,14.13,20.57,1,1,0,0,1,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-10-31,10,18.27,17.27,25.12,2,4,0,2,2,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-11-01,10,20.28,19.0,25.53,2,7,0,2,5,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-11-02,10,15.5,15.37,20.74,1,2,0,0,2,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-11-03,10,10.77,10.13,14.1,1,2,0,0,2,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-11-04,10,5.68,5.45,8.85,1,2,0,0,2,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-11-05,10,5.2,5.96,10.0,1,1,0,0,1,1032648,1,August Complex (includes Doe Fire),0,0,fire+hms
+2020-11-06,10,3.91,3.85,5.98,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-11-07,10,4.75,4.57,6.13,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-11-08,10,6.13,6.25,8.5,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-11-09,10,6.04,6.5,10.38,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-11-10,10,6.5,6.38,9.45,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-11-11,10,6.72,6.57,10.72,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-11-12,10,10.02,9.57,14.83,0,0,0,0,0,1032648,1,August Complex (includes Doe Fire),0,0,fire_only
+2020-11-13,10,5.54,5.71,9.11,0,0,0,0,0,0,0,,0,0,clear
+2020-11-14,10,7.41,7.13,12.69,0,0,0,0,0,0,0,,0,0,clear
+2020-11-15,10,8.7,9.66,15.43,0,0,0,0,0,0,0,,0,0,clear
+2020-11-16,10,9.02,9.49,14.26,0,0,0,0,0,0,0,,0,0,clear
+2020-11-17,10,5.95,5.85,9.59,0,0,0,0,0,0,0,,0,0,clear
+2020-11-18,10,3.5,3.54,4.93,0,0,0,0,0,0,0,,0,0,clear
+2020-11-19,10,4.82,5.18,8.03,0,0,0,0,0,0,0,,0,0,clear
+2020-11-20,10,7.92,8.16,14.28,0,0,0,0,0,0,0,,0,0,clear
+2020-11-21,10,11.04,12.09,22.98,0,0,0,0,0,0,0,,0,0,clear
+2020-11-22,10,11.16,11.59,17.56,0,0,0,0,0,0,0,,0,0,clear
+2020-11-23,10,7.72,7.1,11.26,1,1,0,0,1,0,0,,0,0,hms_only
+2020-11-24,10,7.36,7.47,10.58,0,0,0,0,0,0,0,,0,0,clear
+2020-11-25,10,5.83,6.36,9.89,0,0,0,0,0,0,0,,0,0,clear
+2020-11-26,10,3.78,4.55,11.46,0,0,0,0,0,0,0,,0,0,clear
+2020-11-27,9,7.84,8.37,12.94,0,0,0,0,0,0,0,,0,0,clear
+2020-11-28,10,12.42,13.76,22.84,0,0,0,0,0,0,0,,0,0,clear
+2020-11-29,10,14.52,15.14,27.61,0,0,0,0,0,0,0,,0,0,clear
+2020-11-30,10,13.29,12.93,18.78,0,0,0,0,0,0,0,,0,0,clear
+2020-12-01,10,10.75,10.36,14.96,0,0,0,0,0,0,0,,0,0,clear
+2020-12-02,10,12.35,12.19,18.11,0,0,0,0,0,0,0,,0,0,clear
+2020-12-03,10,20.5,19.67,26.86,0,0,0,0,0,0,0,,0,0,clear
+2020-12-04,10,21.0,21.36,28.7,0,0,0,0,0,0,0,,0,0,clear
+2020-12-05,10,20.7,20.85,29.16,0,0,0,0,0,0,0,,0,0,clear
+2020-12-06,10,15.84,14.86,26.42,0,0,0,0,0,0,0,,0,0,clear
+2020-12-07,10,5.77,6.19,12.91,0,0,0,0,0,0,0,,0,0,clear
+2020-12-08,10,8.62,8.48,11.3,0,0,0,0,0,0,0,,0,0,clear
+2020-12-09,10,19.79,18.79,29.12,0,0,0,0,0,0,0,,0,0,clear
+2020-12-10,10,13.59,14.17,20.16,0,0,0,0,0,0,0,,0,0,clear
+2020-12-11,10,6.64,6.37,9.29,0,0,0,0,0,0,0,,0,0,clear
+2020-12-12,10,5.79,5.35,7.84,0,0,0,0,0,0,0,,0,0,clear
+2020-12-13,10,5.57,5.71,9.43,0,0,0,0,0,0,0,,0,0,clear
+2020-12-14,10,5.84,6.12,8.37,0,0,0,0,0,0,0,,0,0,clear
+2020-12-15,10,10.21,9.62,13.27,0,0,0,0,0,0,0,,0,0,clear
+2020-12-16,10,13.52,13.52,19.08,0,0,0,0,0,0,0,,0,0,clear
+2020-12-17,10,5.27,5.51,8.81,0,0,0,0,0,0,0,,0,0,clear
+2020-12-18,9,7.22,7.63,14.06,0,0,0,0,0,0,0,,0,0,clear
+2020-12-19,9,13.08,13.83,25.16,0,0,0,0,0,0,0,,0,0,clear
+2020-12-20,9,13.84,15.51,27.25,0,0,0,0,0,0,0,,0,0,clear
+2020-12-21,10,14.26,14.44,20.73,0,0,0,0,0,0,0,,0,0,clear
+2020-12-22,10,8.38,8.87,14.87,0,0,0,0,0,0,0,,0,0,clear
+2020-12-23,10,9.54,8.64,11.84,0,0,0,0,0,0,0,,0,0,clear
+2020-12-24,10,20.39,19.43,23.07,0,0,0,0,0,0,0,,0,0,clear
+2020-12-25,10,14.13,14.23,21.56,0,0,0,0,0,0,0,,0,0,clear
+2020-12-26,10,6.04,6.14,12.07,0,0,0,0,0,0,0,,0,0,clear
+2020-12-27,10,6.72,6.2,10.04,0,0,0,0,0,0,0,,0,0,clear
+2020-12-28,10,6.77,6.33,8.02,0,0,0,0,0,0,0,,0,0,clear
+2020-12-29,10,8.72,8.66,15.01,0,0,0,0,0,0,0,,0,0,clear
+2020-12-30,10,6.63,7.39,11.85,0,0,0,0,0,0,0,,0,0,clear
+2020-12-31,10,10.32,10.32,15.88,0,0,0,0,0,0,0,,0,0,clear

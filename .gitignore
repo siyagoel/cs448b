@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.DS_Store
+# raw downloads (see DATA.md for sources)
+data/*.zip
+data/epa_other/
+data/hms_tmp/
+data/raw_fires/

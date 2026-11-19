@@ -1,0 +1,10 @@
+event_id,name,start,end,acres,bay_hit,counties,short_label
+304a6ef7,Crews Fire,2020-07-05,2020-07-14,5513.0,1,Santa Clara,Crews Fire
+c002a55a,July Complex,2020-07-24,2020-08-20,83261.0,0,Siskiyou;Modoc,July Complex
+b8f267be,August Complex (includes Doe Fire),2020-08-16,2020-11-12,1032648.0,0,Mendocino;Humboldt;Trinity;Tehama;Glenn;Lake;Colusa,August Complex
+22c6ea3c,SCU Lightning Complex,2020-08-16,2020-10-01,396624.0,1,Santa Clara;San Joaquin;Contra Costa;Alameda;Stanislaus,SCU
+d19ac7c7,CZU Lightning Complex (Including Warnella Fire),2020-08-16,2020-09-22,86509.0,1,Santa Cruz;San Mateo,CZU
+9645c55f,LNU Lightning Complex,2020-08-17,2020-10-02,363220.0,1,Napa;Solano;Lake;Sonoma;Yolo,LNU
+60c2ba16,Woodward Fire,2020-08-18,2020-10-02,4929.0,1,Marin,Woodward Fire
+7e359448,Creek Fire,2020-09-05,2020-10-20,379895.0,0,Fresno;Madera,Creek Fire
+d6b00a56,Glass Fire,2020-09-27,2020-10-20,67484.0,1,Napa;Sonoma,Glass Fire
